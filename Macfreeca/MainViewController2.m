@@ -57,7 +57,6 @@ static void *AVSPTimeRanges = &AVSPTimeRanges;
 }
 
 - (void)awakeFromNib {
-    NSLog(@"만든이:NSMac 이민호");
     isFull = NO;
     _playing = 0;
     [m_lbStatus setStringValue:@"Hello"];
