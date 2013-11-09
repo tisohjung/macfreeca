@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA7AB14B181CCA1D00AD40DE /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7AB14A181CCA1D00AD40DE /* AVKit.framework */; };
+		FAAE902C178488B5005AFC2F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAE902B178488B5005AFC2F /* Cocoa.framework */; };
+		FAAE9036178488B5005AFC2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAAE9034178488B5005AFC2F /* InfoPlist.strings */; };
+		FAAE9038178488B5005AFC2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAE9037178488B5005AFC2F /* main.m */; };
+		FAAE903C178488B5005AFC2F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FAAE903A178488B5005AFC2F /* Credits.rtf */; };
+		FAAE903F178488B5005AFC2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAE903E178488B5005AFC2F /* AppDelegate.m */; };
+		FAAE9042178488B6005AFC2F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAE9040178488B6005AFC2F /* MainMenu.xib */; };
+		FAAE904E17849AC8005AFC2F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAE904D17849AC8005AFC2F /* WebKit.framework */; };
+		FAAE90531784A54E005AFC2F /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAE90521784A54E005AFC2F /* AppController.m */; };
+		FAAE905817855A22005AFC2F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAE905717855A22005AFC2F /* AVFoundation.framework */; };
+		FAAE905C17855CEC005AFC2F /* MainViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAE905A17855CEC005AFC2F /* MainViewController2.m */; };
+		FAAE905D17855CEC005AFC2F /* MainViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAE905B17855CEC005AFC2F /* MainViewController2.xib */; };
+		FAAE905F17857A84005AFC2F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAE905E17857A84005AFC2F /* CoreMedia.framework */; };
+		FAAE9062178A7782005AFC2F /* ViewMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAE9061178A7782005AFC2F /* ViewMovie.m */; };
+		FAD2EFC517A9161400D34135 /* Macfreeca.icns in Resources */ = {isa = PBXBuildFile; fileRef = FAD2EFC417A9161400D34135 /* Macfreeca.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA7AB14A181CCA1D00AD40DE /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		FAAE9028178488B5005AFC2F /* Macfreeca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macfreeca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAAE902B178488B5005AFC2F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FAAE902E178488B5005AFC2F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FAAE902F178488B5005AFC2F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FAAE9030178488B5005AFC2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FAAE9033178488B5005AFC2F /* Macfreeca-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Macfreeca-Info.plist"; sourceTree = "<group>"; };
+		FAAE9035178488B5005AFC2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAAE9037178488B5005AFC2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAAE9039178488B5005AFC2F /* Macfreeca-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Macfreeca-Prefix.pch"; sourceTree = "<group>"; };
+		FAAE903B178488B5005AFC2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FAAE903D178488B5005AFC2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FAAE903E178488B5005AFC2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FAAE9041178488B6005AFC2F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FAAE904D17849AC8005AFC2F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		FAAE90511784A54E005AFC2F /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		FAAE90521784A54E005AFC2F /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		FAAE905717855A22005AFC2F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FAAE905917855CEC005AFC2F /* MainViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController2.h; sourceTree = "<group>"; };
+		FAAE905A17855CEC005AFC2F /* MainViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController2.m; sourceTree = "<group>"; };
+		FAAE905B17855CEC005AFC2F /* MainViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController2.xib; sourceTree = "<group>"; };
+		FAAE905E17857A84005AFC2F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		FAAE9060178A7782005AFC2F /* ViewMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewMovie.h; sourceTree = "<group>"; };
+		FAAE9061178A7782005AFC2F /* ViewMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewMovie.m; sourceTree = "<group>"; };
+		FAD2EFC417A9161400D34135 /* Macfreeca.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Macfreeca.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAAE9025178488B5005AFC2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7AB14B181CCA1D00AD40DE /* AVKit.framework in Frameworks */,
+				FAAE905F17857A84005AFC2F /* CoreMedia.framework in Frameworks */,
+				FAAE905817855A22005AFC2F /* AVFoundation.framework in Frameworks */,
+				FAAE904E17849AC8005AFC2F /* WebKit.framework in Frameworks */,
+				FAAE902C178488B5005AFC2F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAAE901F178488B5005AFC2F = {
+			isa = PBXGroup;
+			children = (
+				FAD2EFC417A9161400D34135 /* Macfreeca.icns */,
+				FAAE9031178488B5005AFC2F /* Macfreeca */,
+				FAAE902A178488B5005AFC2F /* Frameworks */,
+				FAAE9029178488B5005AFC2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAAE9029178488B5005AFC2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE9028178488B5005AFC2F /* Macfreeca.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAAE902A178488B5005AFC2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE905E17857A84005AFC2F /* CoreMedia.framework */,
+				FAAE905717855A22005AFC2F /* AVFoundation.framework */,
+				FAAE904D17849AC8005AFC2F /* WebKit.framework */,
+				FA7AB14A181CCA1D00AD40DE /* AVKit.framework */,
+				FAAE902B178488B5005AFC2F /* Cocoa.framework */,
+				FAAE902D178488B5005AFC2F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAAE902D178488B5005AFC2F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE902E178488B5005AFC2F /* AppKit.framework */,
+				FAAE902F178488B5005AFC2F /* CoreData.framework */,
+				FAAE9030178488B5005AFC2F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FAAE9031178488B5005AFC2F /* Macfreeca */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE903D178488B5005AFC2F /* AppDelegate.h */,
+				FAAE903E178488B5005AFC2F /* AppDelegate.m */,
+				FAAE90511784A54E005AFC2F /* AppController.h */,
+				FAAE90521784A54E005AFC2F /* AppController.m */,
+				FAAE905917855CEC005AFC2F /* MainViewController2.h */,
+				FAAE905A17855CEC005AFC2F /* MainViewController2.m */,
+				FAAE9060178A7782005AFC2F /* ViewMovie.h */,
+				FAAE9061178A7782005AFC2F /* ViewMovie.m */,
+				FAAE9040178488B6005AFC2F /* MainMenu.xib */,
+				FAAE905B17855CEC005AFC2F /* MainViewController2.xib */,
+				FAAE9032178488B5005AFC2F /* Supporting Files */,
+			);
+			path = Macfreeca;
+			sourceTree = "<group>";
+		};
+		FAAE9032178488B5005AFC2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE9033178488B5005AFC2F /* Macfreeca-Info.plist */,
+				FAAE9034178488B5005AFC2F /* InfoPlist.strings */,
+				FAAE9037178488B5005AFC2F /* main.m */,
+				FAAE9039178488B5005AFC2F /* Macfreeca-Prefix.pch */,
+				FAAE903A178488B5005AFC2F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAAE9027178488B5005AFC2F /* Macfreeca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAAE9045178488B6005AFC2F /* Build configuration list for PBXNativeTarget "Macfreeca" */;
+			buildPhases = (
+				FAAE9024178488B5005AFC2F /* Sources */,
+				FAAE9025178488B5005AFC2F /* Frameworks */,
+				FAAE9026178488B5005AFC2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Macfreeca;
+			productName = Macfreeca;
+			productReference = FAAE9028178488B5005AFC2F /* Macfreeca.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAAE9020178488B5005AFC2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Minho Lee";
+			};
+			buildConfigurationList = FAAE9023178488B5005AFC2F /* Build configuration list for PBXProject "Macfreeca" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAAE901F178488B5005AFC2F;
+			productRefGroup = FAAE9029178488B5005AFC2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAAE9027178488B5005AFC2F /* Macfreeca */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAAE9026178488B5005AFC2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAE9036178488B5005AFC2F /* InfoPlist.strings in Resources */,
+				FAAE903C178488B5005AFC2F /* Credits.rtf in Resources */,
+				FAAE9042178488B6005AFC2F /* MainMenu.xib in Resources */,
+				FAAE905D17855CEC005AFC2F /* MainViewController2.xib in Resources */,
+				FAD2EFC517A9161400D34135 /* Macfreeca.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAAE9024178488B5005AFC2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAE9038178488B5005AFC2F /* main.m in Sources */,
+				FAAE903F178488B5005AFC2F /* AppDelegate.m in Sources */,
+				FAAE90531784A54E005AFC2F /* AppController.m in Sources */,
+				FAAE905C17855CEC005AFC2F /* MainViewController2.m in Sources */,
+				FAAE9062178A7782005AFC2F /* ViewMovie.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAAE9034178488B5005AFC2F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAAE9035178488B5005AFC2F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FAAE903A178488B5005AFC2F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAAE903B178488B5005AFC2F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FAAE9040178488B6005AFC2F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAAE9041178488B6005AFC2F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAAE9043178488B6005AFC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FAAE9044178488B6005AFC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FAAE9046178488B6005AFC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Macfreeca/Macfreeca-Prefix.pch";
+				INFOPLIST_FILE = "Macfreeca/Macfreeca-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FAAE9047178488B6005AFC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Macfreeca/Macfreeca-Prefix.pch";
+				INFOPLIST_FILE = "Macfreeca/Macfreeca-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAAE9023178488B5005AFC2F /* Build configuration list for PBXProject "Macfreeca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAAE9043178488B6005AFC2F /* Debug */,
+				FAAE9044178488B6005AFC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAAE9045178488B6005AFC2F /* Build configuration list for PBXNativeTarget "Macfreeca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAAE9046178488B6005AFC2F /* Debug */,
+				FAAE9047178488B6005AFC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAAE9020178488B5005AFC2F /* Project object */;
+}

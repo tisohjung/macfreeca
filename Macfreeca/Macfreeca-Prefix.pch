@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Macfreeca' target in the 'Macfreeca' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
