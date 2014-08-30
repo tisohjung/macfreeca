@@ -20,9 +20,21 @@
 		FAAE905C17855CEC005AFC2F /* MainViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAE905A17855CEC005AFC2F /* MainViewController2.m */; };
 		FAAE905D17855CEC005AFC2F /* MainViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAE905B17855CEC005AFC2F /* MainViewController2.xib */; };
 		FAAE905F17857A84005AFC2F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAE905E17857A84005AFC2F /* CoreMedia.framework */; };
-		FAAE9062178A7782005AFC2F /* ViewMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAE9061178A7782005AFC2F /* ViewMovie.m */; };
 		FAD2EFC517A9161400D34135 /* Macfreeca.icns in Resources */ = {isa = PBXBuildFile; fileRef = FAD2EFC417A9161400D34135 /* Macfreeca.icns */; };
+		FAEE042219101DC00096CCE1 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEE042119101DC00096CCE1 /* Quartz.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAEE04281910388D0096CCE1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA7AB14A181CCA1D00AD40DE /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
@@ -47,9 +59,8 @@
 		FAAE905A17855CEC005AFC2F /* MainViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController2.m; sourceTree = "<group>"; };
 		FAAE905B17855CEC005AFC2F /* MainViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController2.xib; sourceTree = "<group>"; };
 		FAAE905E17857A84005AFC2F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		FAAE9060178A7782005AFC2F /* ViewMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewMovie.h; sourceTree = "<group>"; };
-		FAAE9061178A7782005AFC2F /* ViewMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewMovie.m; sourceTree = "<group>"; };
 		FAD2EFC417A9161400D34135 /* Macfreeca.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Macfreeca.icns; sourceTree = "<group>"; };
+		FAEE042119101DC00096CCE1 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAEE042219101DC00096CCE1 /* Quartz.framework in Frameworks */,
 				FA7AB14B181CCA1D00AD40DE /* AVKit.framework in Frameworks */,
 				FAAE905F17857A84005AFC2F /* CoreMedia.framework in Frameworks */,
 				FAAE905817855A22005AFC2F /* AVFoundation.framework in Frameworks */,
@@ -89,6 +101,7 @@
 		FAAE902A178488B5005AFC2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAEE042119101DC00096CCE1 /* Quartz.framework */,
 				FAAE905E17857A84005AFC2F /* CoreMedia.framework */,
 				FAAE905717855A22005AFC2F /* AVFoundation.framework */,
 				FAAE904D17849AC8005AFC2F /* WebKit.framework */,
@@ -118,8 +131,6 @@
 				FAAE90521784A54E005AFC2F /* AppController.m */,
 				FAAE905917855CEC005AFC2F /* MainViewController2.h */,
 				FAAE905A17855CEC005AFC2F /* MainViewController2.m */,
-				FAAE9060178A7782005AFC2F /* ViewMovie.h */,
-				FAAE9061178A7782005AFC2F /* ViewMovie.m */,
 				FAAE9040178488B6005AFC2F /* MainMenu.xib */,
 				FAAE905B17855CEC005AFC2F /* MainViewController2.xib */,
 				FAAE9032178488B5005AFC2F /* Supporting Files */,
@@ -149,6 +160,7 @@
 				FAAE9024178488B5005AFC2F /* Sources */,
 				FAAE9025178488B5005AFC2F /* Frameworks */,
 				FAAE9026178488B5005AFC2F /* Resources */,
+				FAEE04281910388D0096CCE1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -209,7 +221,6 @@
 				FAAE903F178488B5005AFC2F /* AppDelegate.m in Sources */,
 				FAAE90531784A54E005AFC2F /* AppController.m in Sources */,
 				FAAE905C17855CEC005AFC2F /* MainViewController2.m in Sources */,
-				FAAE9062178A7782005AFC2F /* ViewMovie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,10 +313,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/macbook/Downloads/VLCKit-SDK-master/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Macfreeca/Macfreeca-Prefix.pch";
 				INFOPLIST_FILE = "Macfreeca/Macfreeca-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -315,10 +331,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/macbook/Downloads/VLCKit-SDK-master/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Macfreeca/Macfreeca-Prefix.pch";
 				INFOPLIST_FILE = "Macfreeca/Macfreeca-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
