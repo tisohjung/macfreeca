@@ -39,6 +39,7 @@
     
     m_strUrl = @"http://istream.m.afreeca.com/stream/route/";
     m_strUrl = @"http://m.afreeca.com/live/stream/a/hls/broad_no/";
+    m_strUrl = @"http://chromecast.afreeca.gscdn.com/livestream-10/";
 //    m_strUrl = @"http://123.111.232.16/bts/";
     return self;
 }
@@ -46,7 +47,7 @@
 - (void)awakeFromNib {
     [m_lbStatus setStringValue:@"Hello"];
     
-    NSString *test = @"http://m.afreeca.com/main.php";
+    NSString *test = @"http://m.afreeca.com/";
     
     [m_webView setMainFrameURL:test];
     [m_webView setUIDelegate:self];
@@ -73,18 +74,34 @@
 }
 - (void)webView:(WebView *)sender mouseDidMoveOverElement:(NSDictionary *)elementInformation modifierFlags:(NSUInteger)modifierFlags
 {
-    //    NSLog(@"%@", [elementInformation objectForKey:@"WebElementLinkURL"]);
-    NSString *i_addString = [[elementInformation objectForKey:@"WebElementLinkURL"] absoluteString];
-    //    NSLog(@"%@", i_addString);
-    if ([i_addString hasPrefix:@"javascript:afPlay("]) {
-        i_addString = [i_addString stringByReplacingOccurrencesOfString:@"javascript:afPlay(" withString:@""];
-        i_addString = [[i_addString componentsSeparatedByString:@","] objectAtIndex:0];
-        i_addString = [i_addString stringByReplacingOccurrencesOfString:@")" withString:@""];
-        //        i_addString = [i_addString stringByAppendingString:@".m3u8?fr=w"];
+//    NSLog(@"%@", elementInformation);
+    NSString *i_addString = [[elementInformation objectForKey:@"WebElementImageURL"] absoluteString];
+//    NSLog(@"%@", i_addString);
+    if ([i_addString hasPrefix:@"http://liveimg"]) {
+        i_addString = [i_addString stringByReplacingOccurrencesOfString:@"http://liveimg.afreeca.co.kr" withString:@""];
+        i_addString = [[i_addString componentsSeparatedByString:@"/"] lastObject];
+        i_addString = [[i_addString componentsSeparatedByString:@"."] objectAtIndex:0];
+//        i_addString = [i_addString stringByReplacingOccurrencesOfString:@")" withString:@""];
+        i_addString = [i_addString stringByAppendingString:@"-mobile-hd-hls/playlist.m3u8"];
         //        ?fr=w 뒤에 붙는 조건문, 그냥 없어도 됨
+//        NSLog(@"%@", i_addString);
+        
+        
         m_strAdd = [[NSString alloc] initWithString:i_addString];
         //        NSLog(@"%@", m_strAdd);
     }
+    
+//    NSString *i_addString = [[elementInformation objectForKey:@"WebElementLinkURL"] absoluteString];
+////    NSLog(@"%@", i_addString);
+//    if ([i_addString hasPrefix:@"javascript:afPlay("]) {
+//        i_addString = [i_addString stringByReplacingOccurrencesOfString:@"javascript:afPlay(" withString:@""];
+//        i_addString = [[i_addString componentsSeparatedByString:@","] objectAtIndex:0];
+//        i_addString = [i_addString stringByReplacingOccurrencesOfString:@")" withString:@""];
+//        //        i_addString = [i_addString stringByAppendingString:@".m3u8?fr=w"];
+//        //        ?fr=w 뒤에 붙는 조건문, 그냥 없어도 됨
+//        m_strAdd = [[NSString alloc] initWithString:i_addString];
+//        //        NSLog(@"%@", m_strAdd);
+//    }
 }
 - (void)webView:(WebView *)sender runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WebFrame *)frame
 {
@@ -92,7 +109,7 @@
 //    m_strAdd = [m_strAdd stringByAppendingString:@".m3u8"];
     fileUrl = [NSURL URLWithString:[m_strUrl stringByAppendingString:m_strAdd]];
     // afreeca url
-    NSLog(@"%@", fileUrl);
+//    NSLog(@"%@", fileUrl);
  
     // movie play
     
@@ -113,7 +130,7 @@
                           @"-L" ,
                           [NSString stringWithFormat:@"%@", commandToRun],
                           nil];
-    NSLog(@"run command: %@",commandToRun);
+//    NSLog(@"run command: %@",commandToRun);
     [task setArguments: arguments];
     
 //    NSPipe *pipe;

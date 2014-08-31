@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment version="1070" defaultVersion="1040" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
@@ -54,7 +54,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" spellingCorrection="YES" smartInsertDelete="YES" id="33">
-                                <rect key="frame" x="0.0" y="0.0" width="253" height="118"/>
+                                <rect key="frame" x="0.0" y="0.0" width="253" height="79"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="minSize" width="253" height="30"/>
@@ -73,16 +73,7 @@
                                             <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="12" name="AppleSDGothicNeo-Regular"/>
                                             <url key="NSLink" string="http://www.videolan.org/vlc/"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="﻿">
-                                        <attributes>
-                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="12" name="AppleSDGothicNeo-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="12" defaultTabInterval="36">
                                                 <tabStops/>
                                             </paragraphStyle>
                                         </attributes>
@@ -93,7 +84,7 @@ Cg
 </string>
                                         <attributes>
                                             <font key="NSFont" size="11" name="AppleSDGothicNeo-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="12" defaultTabInterval="36">
                                                 <tabStops/>
                                             </paragraphStyle>
                                         </attributes>
@@ -113,22 +104,6 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">
-블로그제공:</string>
-                                        <attributes>
-                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="http://blog.naver.com/skstkdwoek">
-                                        <attributes>
-                                            <color key="NSColor" red="0.1647058824" green="0.19215686269999999" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Regular"/>
-                                            <url key="NSLink" string="http://blog.naver.com/skstkdwoek"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
                                         <string key="content" base64-UTF8="YES">
 Cg
 </string>
@@ -140,10 +115,17 @@ Cg
                                     </fragment>
                                     <fragment>
                                         <string key="content">아이콘제공:mammonite님
-
--화면이안나오면조금만기달려주세요 파일형태가 잘 호환이안되나봐요</string>
+블로그제공:</string>
                                         <attributes>
                                             <font key="NSFont" size="11" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="http://blog.naver.com/skstkdwoek">
+                                        <attributes>
+                                            <color key="NSColor" red="0.1647058824" green="0.19215686269999999" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Regular"/>
+                                            <url key="NSLink" string="http://blog.naver.com/skstkdwoek"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
@@ -159,7 +141,7 @@ Cg
                         <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
-                    <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="35">
+                    <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="0.34693877551020408" horizontal="NO" id="35">
                         <rect key="frame" x="254" y="1" width="15" height="30"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
